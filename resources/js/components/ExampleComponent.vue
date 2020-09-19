@@ -1,23 +1,41 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Fuck You!</div>
+        <p>Fuck!</p>
+        <p class="font-bold">Fuck!</p>
+        <el-button type="text" @click="dialogVisible = true">Click !</el-button>
 
-                    <div class="card-body">
-                        Fuck You Mother Every Day EIEIO
-                    </div>
-                </div>
-            </div>
-        </div>
+        <el-dialog
+            title="Message"
+            :visible.sync="dialogVisible"
+            width="30%"
+            :before-close="handleClose"
+        >
+            <span>屌你老母</span>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="dialogVisible = false">取消</el-button>
+                <el-button type="primary" @click="dialogVisible = false"
+                    >確定</el-button
+                >
+            </span>
+        </el-dialog>
     </div>
 </template>
 
 <script>
 export default {
-    mounted() {
-        console.log("Component mounted.");
+    data() {
+        return {
+            dialogVisible: false
+        };
+    },
+    methods: {
+        handleClose(done) {
+            this.$confirm("確定關閉？")
+                .then(_ => {
+                    done();
+                })
+                .catch(_ => {});
+        }
     }
 };
 </script>
