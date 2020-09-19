@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChonwaiFunController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -11,8 +12,12 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/', [ChonwaiFunController::class, 'index'])->where('any', '.*')->name('home');
 });
