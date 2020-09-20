@@ -10,12 +10,10 @@
             width="30%"
             :before-close="handleClose"
         >
-            <span>屌你老母</span>
+            <span>Hi</span>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="dialogVisible = false">取消</el-button>
-                <el-button type="primary" @click="dialogVisible = false"
-                    >確定</el-button
-                >
+                <el-button type="primary" @click="dialogVisible = false">確定</el-button>
             </span>
         </el-dialog>
     </div>
@@ -25,17 +23,17 @@
 export default {
     data() {
         return {
-            dialogVisible: false
+            dialogVisible: false,
         };
     },
     methods: {
         handleClose(done) {
-            this.$confirm("確定關閉？")
+            this.$confirm('確定關閉？')
                 .then(_ => {
                     done();
                 })
                 .catch(_ => {});
-        }
-    }
+        },
+    },
 };
 </script>
