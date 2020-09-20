@@ -1744,8 +1744,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1754,7 +1752,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     handleClose: function handleClose(done) {
-      this.$confirm("確定關閉？").then(function (_) {
+      this.$confirm('確定關閉？').then(function (_) {
         done();
       })["catch"](function (_) {});
     }
@@ -63147,7 +63145,7 @@ var render = function() {
           }
         },
         [
-          _c("span", [_vm._v("屌你老母")]),
+          _c("span", [_vm._v("Hi")]),
           _vm._v(" "),
           _c(
             "span",
@@ -75358,7 +75356,7 @@ Vue.use(element_ui__WEBPACK_IMPORTED_MODULE_0___default.a);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component("example-component", __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -75366,7 +75364,7 @@ Vue.component("example-component", __webpack_require__(/*! ./components/ExampleC
  */
 
 var app = new Vue({
-  el: "#app"
+  el: '#app'
 });
 
 /***/ }),
