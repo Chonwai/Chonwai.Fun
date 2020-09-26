@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::group(['middleware' => 'web'], function () {
     Route::get('/', [ChonwaiFunController::class, 'index'])->where('any', '.*')->name('home');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
