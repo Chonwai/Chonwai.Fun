@@ -10,6 +10,7 @@
     </head>
     <body>
         <div id="example">
+            <Example></Example>
         </div>
         <p class="text-3xl">HaHa</p>
         <script src="js/app.js"></script>
