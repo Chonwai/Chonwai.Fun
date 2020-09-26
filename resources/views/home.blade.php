@@ -11,6 +11,7 @@
     <body>
         <div id="example">
         </div>
+        <p class="text-3xl">HaHa</p>
         <script src="js/app.js"></script>
     </body>
 </html>
