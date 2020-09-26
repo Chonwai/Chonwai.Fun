@@ -9,8 +9,8 @@
         <title>Chonwai Fun</title>
     </head>
     <body>
-        <div id="app">
-            <example-component></example-component>
+        <div id="example">
+            <Example></Example>
             <app></app>
         </div>
         <script src="js/app.js"></script>
