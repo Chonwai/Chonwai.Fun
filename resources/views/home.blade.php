@@ -10,8 +10,6 @@
     </head>
     <body>
         <div id="example">
-            <Example></Example>
-            <app></app>
         </div>
         <script src="js/app.js"></script>
     </body>
